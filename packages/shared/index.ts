@@ -1,1 +1,1 @@
-export const whoami = 'shared'
+export * from './src';
