@@ -1,4 +1,4 @@
-import { IRobotBaseAPI, Message, OcrResult } from './api';
+import { IRobotBaseAPI, Message, OcrResult } from './types/api';
 
 const ERROR = Error('');
 
@@ -6,10 +6,7 @@ export class RobotBaseAdapter implements IRobotBaseAPI {
   getMessage(message_id: string | number): Message {
     throw ERROR;
   }
-  async sendMessage(
-    group_id: string | number,
-    message: string,
-  ): Promise<number> {
+  async sendMessage(message: string): Promise<number> {
     throw ERROR;
   }
 
